@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - My Grocery Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header .navi {
+            background-color: rgb(105, 0, 119);
+            padding: 10px 20px;
+        }
+
+        header .navi ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header .navi ul li {
+            list-style: none;
+        }
+
+        header .navi ul li a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        header .navi ul li a:hover {
+            background-color: white;
+            color: rgb(105, 0, 119);
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: rgb(105, 0, 119);
+            color: white;
+            border-radius: 5rem 0 0 0;
+            padding-top: 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+            gap: 1.5rem;
+        }
+
+        .footer-container h2 {
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+        .footer-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social a {
+            font-size: 20px;
+            margin-right: 1rem;
+        }
+
+        .copyright {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+          color: aliceblue;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: rgb(105, 0, 119);
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: rgb(105, 0, 119);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #841c8a;
+        }
+
+        @media (max-width: 768px) {
+            header .navi ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header .navi ul li a {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navi">
+            <ul>
+                <li><img src="logggo.png" alt="Logo" style="height: 40px;"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Shop now</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="text-center">We Value Your Feedback</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="rating" class="form-label">Rating</label>
+                <select class="form-select" id="rating" required>
+                    <option value="" disabled selected>Select your rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Very Poor</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comments</label>
+                <textarea class="form-control" id="comments" rows="4" placeholder="Your Feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+    </div>
+    <br><br>
+    <div class="footer">
+        <br><br>
+        <div class="footer-container container">
+            <div class="footer-box">
+                <h2>G Mart</h2>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <p>Maharashtra</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>+91 7276779611</p>
+                <p>Gmart@gmail.com</p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="copyright">
+            <p>&#169; CarpoolVenom All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
